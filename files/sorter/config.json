@@ -1,0 +1,178 @@
+{
+	"backgroundImage":"gameSortItBg.jpg",
+	
+	"title":"Задание на поиск соответствия",
+	"startPopText":" ",
+	"startPopExplainText":"Какие компоненты относятся к какому варианту исполнения ROTO Patio Alversa?",
+	"startPopButtonText":"Поехали!!!",
+	
+	"failPopText":"К сожалению, задание не выполнено.",
+	"failPopExplainText":"Попробуйте еще раз!",
+	"failPopButtonText":"Начать заново",
+	
+	"successPopText":"Здорово! Задание выполнено!",
+	"successPopExplainNextText":"Идем дальше!",
+	"successPopButtonNextText":"Далее",
+	"successPopExplainText":"Игра окончена!",
+	"successPopButtonText":"Начать заново",
+	"successPopPointsText":"Пункты:",
+	
+	"generalPopButtonQuitText":"заверша́ть",
+	
+	"guiGoodColor":"#FE0009",
+	"guiBadColor":"#c9302c",
+	"guiTextColor":"#fff",
+	"guiTextFont":"Arial",
+	"guiTextSize":20,
+	"guiY":10,
+	"scorePosition":"left",
+	"timePosition":"right",
+	"useTime":true,
+	"allowNegativePoints":true,
+	"sendNegativePoints":true,
+	
+	"~questionTextX":10,
+	"questionTextY":50,
+	"questionTextSize":12,
+	"questionTextColor":"#FE0009",
+	
+	"tileWidth":60,
+	"tileHeight":65,
+	"tileRoundCorner":5,
+	"tileColors":["#fff"],
+	"tileBorderColor":"#FE0009",
+	"tileBorderSize":3,
+	"tileTextFont":"Arial",
+	"tileTextSize":0,
+	"tileTextAlign":"center",
+	"tileTextColor":"rgba(0,0,0, 0.5)",
+	
+	"targetWidth":100,
+	"targetHeight":120,
+	"targetRoundCorner":5,
+	"targetColors":["rgba(255,255,255, 0.7)"],
+	"targetBorderColor":"#fff",
+	"targetBorderSize":0,
+	"targetTextFont":"Verdana, Arial",
+	"targetTextSize":11,
+	"targetTextColor":"rgba(0,0,0)",
+	
+	"pointCounter":10,
+	"pointCounterSpeed":5,
+	"bonusTextColorMinus":"#c9302c",
+	"bonusTextColorPlus":"#35AB31",
+	"bonusTextFont":"Verdana, Arial",
+	
+	"level":[
+		{
+			"levelTimeSecs":120,
+			"releaseTimeSecs":2,
+			"questionText":"Сопоставьте пиктограммы правильно!",
+			"pointsCorrect":10,
+			"pointsWrong":-5,
+			"pointsToWin":50,
+			
+			"answerPool1Name":"Ходовой механизм: без демпфера",
+			"answerPool1Image":"",
+			"answerPool1":[
+				{"text":" ", "image":"sort_ks.jpg"}
+			],
+			"answerPool2Name":"Ходовой механизм: с демпфером",
+			"answerPool2Image":"",
+			"answerPool2":[
+				{"text":" ", "image":"sort_ps_ohne.jpg"},
+				{"text":" ", "image":"sort_ps_spalt.jpg"},
+				{"text":" ", "image":"sort_ps_air.jpg"},
+				{"text":" ", "image":"sort_ps_air_com.jpg"}
+			],
+			"answerPoolWrong":[]
+		},{
+			"levelTimeSecs":120,
+			"releaseTimeSecs":2,
+			"questionText":"Сопоставьте пиктограммы правильно!",
+			"pointsCorrect":10,
+			"pointsWrong":-5,
+			"pointsToWin":50,
+			
+			"answerPool1Name":"Ножницы: с управлением",
+			"answerPool1Image":"",
+			"answerPool1":[
+				{"text":" ", "image":"sort_ps_ohne.jpg"},
+				{"text":" ", "image":"sort_ps_spalt.jpg"},
+				{"text":" ", "image":"sort_ps_air.jpg"},
+				{"text":" ", "image":"sort_ps_air_com.jpg"}
+			],
+			"answerPool2Name":"Ножницы: без управления",
+			"answerPool2Image":"",
+			"answerPool2":[
+				{"text":" ", "image":"sort_ks.jpg"}				
+			],
+			"answerPoolWrong":[]
+		},{
+			"levelTimeSecs":120,
+			"releaseTimeSecs":2,
+			"questionText":"Сопоставьте пиктограммы правильно!",
+			"pointsCorrect":10,
+			"pointsWrong":-5,
+			"pointsToWin":40,
+			
+			"answerPool1Name":"Управляющий упор сверху: фиксированный",
+			"answerPool1Image":"",
+			"answerPool1":[
+				{"text":" ", "image":"sort_ps_ohne.jpg"},
+				{"text":" ", "image":"sort_ps_spalt.jpg"}
+			],
+			"answerPool2Name":"Управляющий упор сверху: с откидыванием",
+			"answerPool2Image":"",
+			"answerPool2":[
+				{"text":" ", "image":"sort_ps_air.jpg"},
+				{"text":" ", "image":"sort_ps_air_com.jpg"}
+			],
+			"answerPoolWrong":[]
+		},{
+			"levelTimeSecs":120,
+			"releaseTimeSecs":2,
+			"questionText":"Сопоставьте пиктограммы правильно!",
+			"pointsCorrect":10,
+			"pointsWrong":-5,
+			"pointsToWin":50,
+			
+			"answerPool1Name":"Средний запор снизу: с защелками",
+			"answerPool1Image":"",
+			"answerPool1":[
+				{"text":" ", "image":"sort_ks.jpg"}
+			],
+			"answerPool2Name":"Средний запор снизу: без защелок",
+			"answerPool2Image":"",
+			"answerPool2":[
+				{"text":" ", "image":"sort_ps_ohne.jpg"},
+				{"text":" ", "image":"sort_ps_spalt.jpg"},
+				{"text":" ", "image":"sort_ps_air.jpg"},
+				{"text":" ", "image":"sort_ps_air_com.jpg"}				
+			],
+			"answerPoolWrong":[]
+		},{
+			"levelTimeSecs":120,
+			"releaseTimeSecs":2,
+			"questionText":"Сопоставьте пиктограммы правильно!",
+			"pointsCorrect":10,
+			"pointsWrong":-5,
+			"pointsToWin":50,
+			
+			"answerPool1Name":"Средний запор снизу: без ножниц",
+			"answerPool1Image":"",
+			"answerPool1":[
+				{"text":" ", "image":"sort_ks.jpg"},
+				{"text":" ", "image":"sort_ps_ohne.jpg"},
+				{"text":" ", "image":"sort_ps_spalt.jpg"},
+				{"text":" ", "image":"sort_ps_air.jpg"}	
+			],
+			"answerPool2Name":"Средний запор снизу: с ножницами",
+			"answerPool2Image":"",
+			"answerPool2":[
+				{"text":" ", "image":"sort_ps_air_com.jpg"}
+			],
+			"answerPoolWrong":[]
+		}
+	]
+}

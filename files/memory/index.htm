@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">  
+    <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Quiz</title>
+        
+        <link type="text/css" rel="stylesheet" href="memory.css">
+
+        <style>
+            body{
+                font-family:Arial, sans-serif;
+            }
+            
+            #stage{
+                width:775px;
+                margin:10px;
+            }
+        </style>
+
+        <script type="text/javascript" language="javascript" src="lib/jquery.js"></script>
+        <script type="text/javascript" language="javascript" src="lib/jquery.ui.js"></script>    
+        <script type="text/javascript" language="javascript" src="lib/jquery.flip.js"></script>
+        <script type="text/javascript" language="javascript" src="lib/jquery.quizymemorygame.js"></script>
+
+        
+        <script type="text/javascript" language="javascript">
+            $(function() {
+                $("#stage").quizyMemoryGame({
+                    itemWidth: 115,
+                    itemHeight: 115,
+                    itemsMargin: 15,
+                    colCount: 6,
+                    animType: "flip",
+                    flipAnim: "tb",
+                    animSpeed: 250,
+                    resultIcons: true,
+                    gameSummary: true,
+                    openDelay: 2500,
+                    textSummaryTitle: "Danke!",
+                    textSummaryClicks: "Klicks",
+                    textSummaryTime: "Sekunden",
+                    onFinishCall: function(param){
+                        //param --> param.clicks and param.time
+                        if(parent){
+                            var status="incomplete";
+                            if(typeof parent.setPageScore=="function"){
+                                switch(true){
+                                    case (param.clicks<20):
+                                        status="passed";
+                                        break;
+                                    case (param.clicks<30):
+                                        status="passed";
+                                        break;
+                                    case (param.clicks>40):
+                                        status="failed";
+                                        break;
+                                }                                
+                                parent.setPageScore(status);
+                            }
+                        }                        
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        
+		<table width="100%" height="100%" cellspacing="0" cellpadding="0">
+			<tr>
+				<td valign="middle" align="center">
+					<div>
+						<img src="images/task.jpg" />
+					</div>
+					
+					<div id="stage" class="quizy-memorygame">
+						<ul>
+							<li class="match1">
+								<img src="images/match1.jpg" />
+							</li>
+							
+							<li class="match2">
+								<img src="images/match2.jpg" />
+							</li>
+							
+							<li class="match3">
+								<img src="images/match3.jpg" />
+							</li>
+							
+							<li class="match4">
+								<img src="images/match4.jpg" />
+							</li>
+							
+							<li class="match5">
+								<img src="images/match5.jpg" />
+							</li>
+							
+							<li class="match6">
+								<img src="images/match6.jpg" />
+							</li>
+							
+							<li class="match1">
+								<img src="images/card1.jpg" />
+							</li>
+							
+							<li class="match2">
+								<img src="images/card2.jpg" />
+							</li>
+							
+							<li class="match3">
+								<img src="images/card3.jpg" />
+							</li>
+							
+							<li class="match4">
+								<img src="images/card4.jpg" />
+							</li>
+							
+							<li class="match5">
+								<img src="images/card5.jpg" />
+							</li>
+							
+							<li class="match6">
+								<img src="images/card6.jpg" />
+							</li>
+							
+						</ul>
+					</div>
+				</td>
+			</tr>
+		</table>
+    </body>
+</html>
